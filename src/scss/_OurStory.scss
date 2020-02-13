@@ -1,0 +1,39 @@
+#OurStory{
+    padding: 100px 0;
+
+    .quote{
+        color: $paragraphColor;
+        margin: .5rem 0 3rem;
+
+        strong{
+            color: $black;
+            font-weight: 700;
+        }
+    }
+
+    .reserve-btn{
+        font-family: $displayFont;
+        display: inline-block;
+        padding: 20px 40px;
+        border: 1px solid $black;
+        text-align: center;
+        text-decoration: none;
+        color: $black;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background: $red;
+            color: white;
+        }
+    }
+
+    .video-img{
+        max-width: 400px;
+        height: 550px;
+        background: linear-gradient(135deg,rgba(0,0,0,.2) 0,#002d77 100%);
+        background-image: linear-gradient(135deg,rgba(0,0,0,.2) 0,#000 100%),url("https://1m8t7f33dnra3sfk6v2rjurs-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/Landing-Page-Cooking-Guides-Jess-Kitchen-Chopping-1060x650.jpg");
+        background-position: right;
+        background-size: cover;
+        margin: 0 auto;
+    }
+}
