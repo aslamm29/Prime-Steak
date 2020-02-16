@@ -21,9 +21,9 @@ export default function SpecialMenu() {
 					'Fried Egg, Steak, Baked Potato, French Fries, Side of vegetables',
 				price: 17
 			}
-		].map(item => {
+		].map((item, index) => {
 			return (
-				<div className="col-md-4">
+				<div className="col-md-4" key={index}>
 					<div className="box">
 						<div className="box-img">
 							<div className="price-circle">${item.price}</div>

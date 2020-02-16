@@ -4,10 +4,12 @@ import TopImg from './components/TopImg';
 import OurStory from './components/OurStory';
 import SpecialMenu from './components/SpecialMenu'
 import RandomQuote from './components/RandomQuote'
+import Reviews from './components/Reviews';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
+import ReviewsContextProvider from './contexts/ReviewsContext';
 
-function App() {
+const App = () => {
   return (
     <div>
       <Header />
@@ -15,6 +17,9 @@ function App() {
       <OurStory />
       <SpecialMenu />
       <RandomQuote />
+      <ReviewsContextProvider>
+        <Reviews />
+      </ReviewsContextProvider>
       <ContactUs />
       <Footer />
     </div>
