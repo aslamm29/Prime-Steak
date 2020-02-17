@@ -10,6 +10,69 @@ header{
         padding: 0 10px;
     }
 
+    .header-menu{
+        font-size: 1rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            font-size: 1rem;
+            text-decoration: none;
+            color: white;
+            padding: 0 10px;
+            transition: all .3s ease-in-out;
+        }
+        a:hover{
+            font-weight: 700;
+            color: #ff5253;
+        }
+    }
+   
+    .menu-btn{
+        font-weight: 700;
+        color: #ff5253;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        font-size: 1.6rem;
+        display: none;
+        cursor: pointer;
+    }
+    .mobile-menu{
+        display: none;
+        background: #fff;
+        flex-direction: column;
+        padding: 40px 0;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        z-index: 10;
+        transform: translate3d(-100%, 0, 0);
+        transition: all .4s ease-in-out;
+
+        a{
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: white;
+            background: #ff5253;
+        }
+    }
+    .mobile-menu.active{
+        transform: translate3d(0, 0, 0);
+        -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+        box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+    }
+
     nav{
         display: inline-block;
         float: right;
@@ -23,3 +86,12 @@ header{
         }
     }
 }
+
+@media only screen and (max-width: 960px){
+    
+  }
+  
+  /* Phones */
+  @media only screen and (max-width: 767px){
+    
+  }

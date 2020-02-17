@@ -9,7 +9,7 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import ReviewsContextProvider from './contexts/ReviewsContext';
 import SpecialMenuContextProvider from './contexts/SpecialMenuContext'
-import CompanyInfoContextProvider, { CompanyInfoContext } from './contexts/CompanyInfoContext';
+import CompanyInfoContextProvider from './contexts/CompanyInfoContext';
 
 const App = () => {
   return (

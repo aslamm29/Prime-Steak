@@ -41,7 +41,3 @@ const ContactUs = () => {
 }
 
 export default ContactUs
-
-/*
-{state.companyInfo.location}
-*/
