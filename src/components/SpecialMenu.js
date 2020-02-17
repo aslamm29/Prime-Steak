@@ -1,27 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { SpecialMenuContext } from '../contexts/SpecialMenuContext'
 
-export default function SpecialMenu() {
-	let loopMenu = function() {
-		return [
-			{
-				title: 'Super BBQ Grill No Smoke',
-				description:
-					'Fried Egg, Steak, Baked Potato, French Fries, Side of vegetables',
-				price: 25
-			},
-			{
-				title: 'Mixed Vegetables',
-				description:
-					'Fried Egg, Steak, Baked Potato, French Fries, Side of vegetables',
-				price: 15
-			},
-			{
-				title: 'All Canadian Mix',
-				description:
-					'Fried Egg, Steak, Baked Potato, French Fries, Side of vegetables',
-				price: 17
-			}
-		].map((item, index) => {
+const SpecialMenu = () => {
+	const { specialMenuData } = useContext(SpecialMenuContext)
+	let loopMenu = () => {
+		return specialMenuData.map((item, index) => {
 			return (
 				<div className="col-md-4" key={index}>
 					<div className="box">
@@ -49,3 +32,5 @@ export default function SpecialMenu() {
 		</section>
 	);
 }
+
+export default SpecialMenu

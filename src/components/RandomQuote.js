@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function RandomQuote() {
+const RandomQuote = () => {
 	return (
 		<section
 			id="RandomQuote"
@@ -16,3 +16,5 @@ export default function RandomQuote() {
 		</section>
 	);
 }
+
+export default RandomQuote

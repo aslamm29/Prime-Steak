@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CompanyInfoContext } from '../contexts/CompanyInfoContext';
 
-export default function ContactUs() {
+const ContactUs = () => {
+	const { companyInfo } = useContext(CompanyInfoContext)
 	return (
 		<section id="ContactUs" className="textureBG">
 			<div className="container">
@@ -9,7 +11,7 @@ export default function ContactUs() {
 				<div className="box">
 					<div className="row">
 						<div className="col-md-6">
-							<div className="title">Toronto, Ontario</div>
+							<div className="title">{companyInfo.location}</div>
 							<h6 className="address">
 								435 Yonge Street <br />
 								Greater Toronto Area, M2H562
@@ -37,6 +39,8 @@ export default function ContactUs() {
 		</section>
 	);
 }
+
+export default ContactUs
 
 /*
 {state.companyInfo.location}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function OurStory() {
+const OurStory = () => {
 	return (
 		<section id="OurStory">
 			<div className="container">
@@ -35,3 +35,5 @@ export default function OurStory() {
 		</section>
 	);
 }
+
+export default OurStory

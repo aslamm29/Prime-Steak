@@ -8,19 +8,27 @@ import Reviews from './components/Reviews';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import ReviewsContextProvider from './contexts/ReviewsContext';
+import SpecialMenuContextProvider from './contexts/SpecialMenuContext'
+import CompanyInfoContextProvider, { CompanyInfoContext } from './contexts/CompanyInfoContext';
 
 const App = () => {
   return (
     <div>
       <Header />
-      <TopImg />
-      <OurStory />
-      <SpecialMenu />
+      <CompanyInfoContextProvider>
+        <TopImg />
+      </CompanyInfoContextProvider>
+        <OurStory />
+      <SpecialMenuContextProvider>
+        <SpecialMenu />
+      </SpecialMenuContextProvider>
       <RandomQuote />
       <ReviewsContextProvider>
         <Reviews />
       </ReviewsContextProvider>
-      <ContactUs />
+      <CompanyInfoContextProvider>
+        <ContactUs />
+      </CompanyInfoContextProvider>
       <Footer />
     </div>
   );

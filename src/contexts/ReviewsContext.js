@@ -15,7 +15,7 @@ const ReviewsContextProvider = (props) => {
         },
         {
             company: 'Rate Your Food',
-            author: 'Joe Bastiachi',
+            author: 'Roy Eplstein',
             authorInfo: 'Winner Of The Chef Masters',
             highlight: 'Best Restaurant in North York!',
             review:
@@ -23,7 +23,7 @@ const ReviewsContextProvider = (props) => {
         },
         {
             company: 'Food Critic',
-            author: 'Joe Bastiachi',
+            author: 'James Gordon',
             authorInfo: 'Winner Of The Chef Masters',
             highlight: 'Best Restaurant in Etobicoke!',
             review:
@@ -31,7 +31,7 @@ const ReviewsContextProvider = (props) => {
         },
         {
             company: 'Regal Prime',
-            author: 'Joe Bastiachi',
+            author: 'Luke McCarthy',
             authorInfo: 'Winner Of The Chef Masters',
             highlight: 'Best Restaurant in Scarborough!',
             review:
@@ -39,7 +39,7 @@ const ReviewsContextProvider = (props) => {
         },
         {
             company: 'Steak International',
-            author: 'Joe Bastiachi',
+            author: 'Hugh Emilio',
             authorInfo: 'Winner Of The Chef Masters',
             highlight: 'Best Restaurant in Markham!',
             review:
@@ -50,7 +50,7 @@ const ReviewsContextProvider = (props) => {
 
     return(
         // eslint-disable-next-line no-sequences
-        <ReviewsContext.Provider value={{reviews, currentReview, dispatch}}>
+        <ReviewsContext.Provider value={{reviews, currentReview,setReviews, dispatch}}>
             {props.children}
         </ReviewsContext.Provider>
     )
