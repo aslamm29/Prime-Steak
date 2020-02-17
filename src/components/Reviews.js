@@ -3,9 +3,7 @@ import { ReviewsContext } from '../contexts/ReviewsContext';
 
 const Reviews = () => {
 	const { reviews, currentReview, dispatch } = useContext(ReviewsContext)
-	console.log(reviews)
-	console.log(currentReview)
-	console.log(dispatch)
+
 	let displayReview = () => {
 		return (
 			<div>
