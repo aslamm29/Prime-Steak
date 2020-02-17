@@ -23,7 +23,7 @@ const ContactUs = () => {
 						</div>
 						<div className="col-md-6">
 							<h6>Phone:</h6>
-							<div className="title">647-925-7932</div>
+							<div className="title">{companyInfo.phone}</div>
 							<h6>Lunch Service</h6>
 							<p>
 								Friday, Saturday and Sunday <br /> from 12pm-1.30pm
